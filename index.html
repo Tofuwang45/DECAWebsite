@@ -4,11 +4,15 @@
 <head>
   <title>DECA Club</title>
   <link href="./style.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
   <header>
-    <h1>Coronado High School DECA</h1>
+    <h1 class="title">Coronado High School DECA</h1>
   </header>
 
   <nav>
@@ -39,14 +43,50 @@
     </ul>
   </section>
 
+  <section id="fundraise">
+    <h2>Boba Sales!</h2>
+    <ul>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
+
+  </section>
+
   <section>
     <h2>Get to Know the Board</h2>
-    <ul>
-      <li>President: Michelle Park</li>
-      <li>Vice President of Leadership: Zihan Wang</li>
-      <li>Vice President of Career Development: Wonsun You</li>
-      <li>Vice President of Finance: Nina Rivera-Gonzalez</li>
-    </ul>
+    <table>
+      <colgroup>
+      <col span="1" style = "width:30%;">
+      <col span="1" style = "width:30%;">
+      <col span="1" style = "width:30%;">
+      </colgroup>
+      <tr>
+        <th>Position</th>
+        <th class="board-name">name</th>
+        <th>Contact</th>
+      </tr>
+      <tr>
+        <td>President: </td>
+        <td class="board-name">Michelle Park</td>
+        <td>xxxx</td>
+      </tr>
+      <tr>
+        <td>Vice President of Leadership: </td>
+        <td class="board-name">Zihan Wang</td>
+        <td>xxxx</td>
+      </tr>
+      <tr>
+        <td>Vice President of Career Development: </td>
+        <td class="board-name">Wonsun You</td>
+        <td>xxxx</td>
+      </tr>
+      <tr>
+        <td>Vice President of Finance: </td>
+        <td class="board-name">Nina Rivera-Gonzalez</td>
+        <td>xxxx</td>
+      </tr>
+    </table>
 
   </section>
 
@@ -55,7 +95,20 @@
     <p>
       If you have any questions or would like to join DECA Club, please feel free to contact us via email or phone.
     </p>
-    <p>Email: info@decaco.com</p>
+    <a href="mailto:zihanwang68@gmail.com">Email: ZihanWang68@gmail.com</a>
+    <br><br>
+
+    <div id="email-form">
+      <form id="contact-form" method="POST" action="contact-form-handler.php">
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          <br>
+          <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+          <br>
+          <textarea name="message" class="form-control" placeholder="Message" rows="4" columns="10" required></textarea>
+          <button id="submit-button" type="submit" class="form-control submit">SEND MESSAGE</button>
+      </form>
+    </div>
+
     <a href="#about" class="button">Back to Top</a>
   </section>
 

@@ -1,14 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+
+
+html, body {
+    font-family: "Lexend";
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
 
   header {
-    background-color: #01529B;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYgy6awnbG5w4Bw6FMMKPopMeAOlwbTVNpQ&usqp=CAU");
+    background-size: 1550px;
+    background-position: center;
     color: #fff;
     padding: 20px;
     text-align: center;
+  }
+
+
+  .title {
+    background-color: transparent;
   }
 
   nav {
@@ -25,9 +36,20 @@ body {
   }
 
   section {
-    margin: 10px;
-    padding: 5px;
+    margin: 5px;
+    padding: 0px;
   }
+
+   table, td, th{
+    border: 10px solid;
+    border-color: black;
+    width: 100%;
+  }
+
+  .board-name {
+    font-size: larger;
+    width:30%;
+  } 
 
   .button {
     display: inline-block;
@@ -39,8 +61,7 @@ body {
   }
 
   .button:hover {
-    background-color: #fff;
-    color:black;
+    background-color: #013563;
   }
 
   footer {
@@ -50,7 +71,7 @@ body {
     text-align: center;
   }
 
-  h1{
+  h1 {
     background-color: #01529B;
     color:white;
     text-align: center;
@@ -62,4 +83,43 @@ body {
     color:white;
     text-align: center;
     font-size: 50px;
+  }
+  
+  form {
+    
+    transition: all 4s ease-in-out;
+    width:100%;
+  }
+
+  .form-control {
+    background: transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 20px;
+    text-align:center;
+    margin-bottom: 16px;
+  }
+
+  #email-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    align-content: center;    
+    justify-content: center;
+  }
+
+  #contact-form {
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .button,
+  button {
+    max-width: 200px;
+    margin: 0 auto;
   }
