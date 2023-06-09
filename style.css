@@ -3,23 +3,32 @@
 
 html, body {
     font-family: "Lexend";
-    margin: 0;
+    margin: 0px 0px;
     padding: 0;
     scroll-behavior: smooth;
   }
 
   header {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYgy6awnbG5w4Bw6FMMKPopMeAOlwbTVNpQ&usqp=CAU");
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYgy6awnbG5w4Bw6FMMKPopMeAOlwbTVNpQ&usqp=CAU"); */
     background-size: 1550px;
     background-position: center;
     color: #fff;
-    padding: 20px;
-    text-align: center;
   }
 
+  .topBar{
+    position: sticky;
+    top:0;
+    z-index:1;
+  }
 
   .title {
     background-color: transparent;
+    margin: 0px 0px;
+    background-color: #01529B;
+    color:white;
+    text-align: center;
+    font-size: 70px;
+
   }
 
   nav {
@@ -35,21 +44,44 @@ html, body {
     padding: 5px 10px;
   }
 
-  section {
-    margin: 5px;
-    padding: 0px;
+  
+  
+  #topText {
+    color: white;
+    font-size: 20px;
+    align-self: center;
   }
 
-   table, td, th{
+  section {
+    margin: 0%;
+    margin-top: 0%;
+    padding: 0px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(145,197,255,1) 100%);
+  }
+
+   table {
     border: 10px solid;
     border-color: black;
     width: 100%;
+  } 
+
+  th {
+    background-color: #01529B;
+  }
+
+  td, th {
+    border: 10px solid black;
+    text-align: center;
+  }
+
+  tr:hover td{
+    cursor:pointer;
+    color:red;
   }
 
   .board-name {
     font-size: larger;
-    width:30%;
-  } 
+  }  
 
   .button {
     display: inline-block;
@@ -62,6 +94,8 @@ html, body {
 
   .button:hover {
     background-color: #013563;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
   }
 
   footer {
@@ -71,18 +105,13 @@ html, body {
     text-align: center;
   }
 
-  h1 {
-    background-color: #01529B;
-    color:white;
-    text-align: center;
-    font-size: 100px;
-  }
 
   h2 {
     background-color: #01529B;
     color:white;
     text-align: center;
     font-size: 50px;
+    margin: 10px;
   }
   
   form {
@@ -123,3 +152,33 @@ html, body {
     max-width: 200px;
     margin: 0 auto;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  #s{
+    margin:0px 0%;
+    position:relative;
+  }
+
+  .overlayText{
+    position:absolute;
+    background:#000;
+    top:0;
+    left:0;
+    height:100%;
+    Width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+    opacity:0.9;
+  }
+
+  #topText{
+    font-size: 300px;
+    font-weight:900;
+  }
+
+  
